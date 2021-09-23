@@ -14,8 +14,10 @@ Since Git-Flow takes a local first approach the branch is created locally first.
 
 git push --set-upstream origin feature/add-comment-about-protections
 
-To finish the feature we are going to make one last commit to this branch, then create a Pull Request to merge changes from add-comment-about-protections to the development branch. Once the PR requirements/protections have been satisfied we will run the below command:
+To finish the feature we are going to make one last commit to this branch, then create a Pull Request to merge changes from add-comment-about-protections to the development branch. Once the PR requirements/protections have been satisfied we will click Squash & Merge in the GitHub UI.
+
+The checkout the development branch locally, pull the most recent changes and then run:
 
 git flow feature finish add-comment-about-protections
 
-This will close this branch, merge the changes onto the development branch and checkout the development branch. We will then need to run a git push to move the new code to the development branch which will close the PR.
+This will close the feature branch and get us ready to start a new feature branch.
