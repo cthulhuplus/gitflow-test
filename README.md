@@ -9,3 +9,7 @@ This was typed on the development branch, branch protections should prevent comm
 First pass at proections did not work, so I had to add additional branch protections to prevent direct commits to main and development. They are now working and this comment is from feature branch add-comment-about-proections which was created with this command:
 
 git flow feature start add-comment-about-protections
+
+Since Git-Flow takes a local first approach the branch is created locally first. When you want to push code up to GitHub remote you will need to run a command like this to create the branch on the remote/origin and push the code up
+
+git push --set-upstream origin feature/add-comment-about-protections
