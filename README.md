@@ -1,5 +1,6 @@
 # gitflow-test
 In this repository you will find information on Git-Flow
+
 https://nvie.com/posts/a-successful-git-branching-model/
 https://github.com/nvie/gitflow
 https://jeffkreeftmeijer.com/git-flow/
@@ -21,3 +22,7 @@ The checkout the development branch locally, pull the most recent changes and th
 git flow feature finish add-comment-about-protections
 
 This will close the feature branch and get us ready to start a new feature branch.
+
+
+This was typed on the main branch, branch protections should prevent commits directly to the main branch
+
