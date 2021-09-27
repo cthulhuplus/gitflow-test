@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Git Flow Process/Procedure
 =======
 # gitflow-test
@@ -50,3 +51,11 @@ Create PR for Development <- Release Branch
 
 Close Release in GitHub UI from main (production = main)
 >>>>>>> 2da5150f743d643a7302066c7db57f39c000f5ce
+=======
+# Git Flow Process/Procedure
+
+Process/Procedure using the git-flow tool in git-flow.md
+
+Process/Procedure using adapted standard git flow in git-process.md
+
+>>>>>>> 8d49a822714351517c51b2d9c5f500799c8da41e
