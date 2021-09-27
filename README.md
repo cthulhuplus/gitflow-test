@@ -26,3 +26,20 @@ This will close the feature branch and get us ready to start a new feature branc
 
 This was typed on the main branch, branch protections should prevent commits directly to the main branch
 
+When ready for a release use:
+
+git flow release start NameOfRelease/Branch
+
+Push it to GitHub
+git flow release publish NameOfRelease/Branch
+
+Publish Release
+git flow release finish NameOfRelease/Branch
+
+Resolve any merge conflicts
+
+Create PR for Main <- Release Branch
+
+Create PR for Development <- Release Branch
+
+Close Release in GitHub UI from main (production = main)
