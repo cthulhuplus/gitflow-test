@@ -10,7 +10,7 @@ When PR is ready, complete the PR
 
 When ready to do a release create a release branch from development to merge into main
 
-Merge release branch (development) into main using the "ours" strategy
+Merge release branch (development based) into main using the "ours" strategy
 ```git merge -s ours main```
 
 Push merged release branch to GH
