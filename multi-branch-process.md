@@ -19,4 +19,3 @@ Push merged release branch to GH
 Create a PR for release branch into main, should be good to go
 
 Create release in GH via the UI from main
-
