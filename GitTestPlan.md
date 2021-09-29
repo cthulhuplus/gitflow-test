@@ -35,6 +35,10 @@ Deploy hotfix to main and development branches
 
 ```git checkout -b bbrooks/HF1.0.1 main```
 * Make bug fixes
+* Push fixes up
+
+```git push --set-upstream origin bbrooks/HF1.0.1```
+* Create PR for HF1.0.1 to be merged into main
 
 ## Single Branch
 Deploy feature to "main"
