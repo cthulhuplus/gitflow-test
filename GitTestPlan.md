@@ -11,8 +11,6 @@ Deploy feature to development (default) branch
 * Squash & Merge
 * Delete the branch
 Deploy development to main (production) and create release
-* Create a branch from main (production)
-```git checkout -b bbrooks/RC0.0.5 main```
 Deploy hotfix to main and development branches
 
 ## Single Branch
