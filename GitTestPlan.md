@@ -6,6 +6,10 @@ Deploy feature to development (default) branch
 * Make changes to branch, push changes to GitHub
 ```git push --set-upstream origin bbrooks/newFeature```
 ```git push -u origin bbrooks/newFeature```
+* Create PR in GitHub UI
+* Satisfy PR Requirements
+* Squash & Merge
+* Delete the branch
 Deploy development to main (production) and create release
 Deploy hotfix to main and development branches
 
