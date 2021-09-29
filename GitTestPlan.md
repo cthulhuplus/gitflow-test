@@ -27,8 +27,8 @@ Deploy development to main (production) and create release
 * Squash & Merge
 * Delete Branch
 * Create release in GitHub UI
-** Create tag, target main branch
-** Publish when ready
+ * Create tag, target main branch
+ * Publish when ready
 
 Deploy hotfix to main and development branches
 
