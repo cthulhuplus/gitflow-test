@@ -1,6 +1,11 @@
 # Testing Scenarios
 ## Multi-Branch
 Deploy feature to development (default) branch
+* Create a new branch
+```git checkout -b bbrooks/newFeature development (probably)```
+* Make changes to branch, push changes to GitHub
+```git push --set-upstream origin bbrooks/newFeature```
+```git push -u origin bbrooks/newFeature```
 Deploy development to main (production) and create release
 Deploy hotfix to main and development branches
 
