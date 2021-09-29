@@ -1,6 +1,6 @@
 # Testing Scenarios
 ## Multi-Branch
-Deploy feature to development (default) branch
+### Deploy feature to development (default) branch
 * Create a new branch
 
 ```git checkout -b bbrooks/newFeature development (probably)```
@@ -14,7 +14,7 @@ Deploy feature to development (default) branch
 * Squash & Merge
 * Delete the branch
 
-Deploy development to main (production) and create release
+### Deploy development to main (production) and create release
 * Create branch from main branch
 
 ```git checkout -b bbrooks/RC1.0.0 main```
@@ -30,7 +30,7 @@ Deploy development to main (production) and create release
  * Create tag, target main branch
  * Publish when ready
 
-Deploy hotfix to main and development branches
+### Deploy hotfix to main and development branches
 * Create branch from main branch
 
 ```git checkout -b bbrooks/HF1.0.1 main```
@@ -39,10 +39,21 @@ Deploy hotfix to main and development branches
 
 ```git push --set-upstream origin bbrooks/HF1.0.1```
 * Create PR for HF1.0.1 to be merged into main
+* Satisfy PR Requirements
+* Squash & Merge
+* Create release in GitHub UI
+ * Create tag, target main branch
+ * Publish when ready
+
+* Create PR for HF1.0.1 to be merged into development
+* Satisfy PR Requirements
+* Squash & Merge
+* Delete the branch
+
 
 ## Single Branch
-Deploy feature to "main"
+### Deploy feature to "main"
 
-Create release
+### Create release
 
-Hotfix/Revert to previous state (release)
+### Hotfix/Revert to previous state (release)
