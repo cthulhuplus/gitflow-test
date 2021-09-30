@@ -1,22 +1,50 @@
-# Git Process
+## Multi-Branch
+### Deploy feature to development (default) branch
+* Create a new branch
 
-This is a hotfix branch from main to intentionally throw development and main branch out of wack.
+```git checkout -b bbrooks/newFeature development (probably)```
+* Make changes to branch, push changes to GitHub
 
-Create your branch however you see fit
+```git push --set-upstream origin bbrooks/newFeature```
 
-When branch is ready to merge into development, create PR
+```git push -u origin bbrooks/newFeature```
+* Create PR in GitHub UI
+* Satisfy PR Requirements
+* Squash & Merge
+* Delete the branch
 
-When PR is ready, complete the PR
+### Deploy development to main (production) and create release
+* Create branch from main branch
 
-When ready to do a release create a release branch from development to merge into main
+```git checkout -b bbrooks/RC1.0.0 main```
+* Overwrite development branch on top of it
 
-Merge release branch (development based) into main using the "ours" strategy
-```git merge -s ours main```
+```git merge -X theirs development```
+* This will take the development branch, not do a file comparison, and overwrite the main branch
+* Create PR in UI for release branch into main branch (should be 0 conflicts)
+* Satisfy PR Requirements
+* Squash & Merge
+* Delete Branch
+* Create release in GitHub UI
+ * Create tag, target main branch
+ * Publish when ready
 
-Push merged release branch to GH
-```git push --set-upstream origin bbrooks/OverwriteDevWithMain```
+### Deploy hotfix to main and development branches
+* Create branch from main branch
 
-Create a PR for release branch into main, should be good to go
+```git checkout -b bbrooks/HF1.0.1 main```
+* Make bug fixes
+* Push fixes up
 
-Create release in GH via the UI from main
+```git push --set-upstream origin bbrooks/HF1.0.1```
+* Create PR for HF1.0.1 to be merged into main
+* Satisfy PR Requirements
+* Squash & Merge
+* Create release in GitHub UI
+ * Create tag, target main branch
+ * Publish when ready
 
+* Create PR for HF1.0.1 to be merged into development (might be easier to create a new branch with the HF based on development depending on merge conflicts)
+* Satisfy PR Requirements
+* Squash & Merge
+* Delete the branch
