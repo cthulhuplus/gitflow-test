@@ -45,7 +45,7 @@
  * Create tag, target main branch
  * Publish when ready
 
-* Create PR for HF1.0.1 to be merged into development
+* Create PR for HF1.0.1 to be merged into development (might be easier to create a new branch with the HF based on development depending on merge conflicts)
 * Satisfy PR Requirements
 * Squash & Merge
 * Delete the branch
