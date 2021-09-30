@@ -2,16 +2,16 @@
 
 Notes from using the git-flow tool are located in
 
-[ git-flow-tool.md ]
+[a relative link](git-flow-tool.md)
 
 Notes from creating the multi-branch process are located in 
 
-[ multi-branch-process.md ]
+[a relative link](multi-branch-process.md)
 
 Notes from creating the single-branch process are located in 
 
-[ single-branch-process.md ]
+[a relative link](single-branch-process.md)
 
 The scenarios I used to create the processes
 
-[ GitTestPlan.md ]
+[a relative link](GitTestPlan.md)
