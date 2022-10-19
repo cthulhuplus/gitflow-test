@@ -1,6 +1,6 @@
 # Git Flow Process/Procedure
 
-Notes from using the git-flow tool are located in
+some text here
 
 [git-flow-tool.md](git-flow-tool.md)
 
